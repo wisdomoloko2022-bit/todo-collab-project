@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96); /* calm purple-blue gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+/* To-Do Container */
+.todo-container {
+  background: #ffffff;
+  width: 380px;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f3f5;
+  border-radius: 10px;
+  padding: 6px;
+  margin-bottom: 25px;
+}
+
+.input-section input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.input-section button {
+  background: #3f2b96;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: not-allowed;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background: #5e4bdb;
+}
+
+/* Task Section */
+.task-section h2 {
+  color: #3f2b96;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#taskList {
+  list-style: none;
+  text-align: left;
+}
+
+#taskList li {
+  background: #eef0ff;
+  color: #333;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+#taskList li:hover {
+  background: #dcd8ff;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .todo-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+}
